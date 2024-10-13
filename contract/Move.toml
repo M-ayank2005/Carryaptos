@@ -1,12 +1,15 @@
 [package]
-name = "TransportContract"
+name = "send_message"
 version = "1.0.0"
 authors = []
 
 [addresses]
-TransportContractAddress = "0x1"
+TransportContractAddress = '0xee3df51219a9a6033bbea1be6a7c4090ac8ea4e7717bd62516cf14ecf3baa314'
+[dev-addresses]
 
-[dependencies]
-AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", rev = "mainnet", subdir = "aptos-move/framework/aptos-framework" }
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "testnet"
+subdir = "aptos-move/framework/aptos-framework"
 
 [dev-dependencies]
